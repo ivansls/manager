@@ -1,0 +1,20 @@
+﻿<Window x:Class="PR4.windowtip"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR4"
+        mc:Ignorable="d"
+        Title="windowtip" Height="120" Width="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="newtype"  Text="Введите тип" Grid.RowSpan="1" Grid.ColumnSpan="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="newtypetext" Grid.Row="1" VerticalAlignment="Center" />
+        <Button x:Name="addnewtype" Content="Добавить тип" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Grid.RowSpan="1" Click="add_type_new"/>
+
+    </Grid>
+</Window>
